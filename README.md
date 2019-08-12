@@ -10,4 +10,5 @@ First time
 Following times:
 `npm start`
 
+![picture of an rsf graph workflow in noflo](./images/big-rsf-graph.png)
 ![picture of an rsf graph workflow in noflo](./images/rsf-graph.png)
