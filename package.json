@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "description": "rapid sensemaking noflo development server",
   "scripts": {
-    "init": "node node_modules/.bin/noflo-nodejs --secret some-password",
-    "start": "node node_modules/.bin/noflo-nodejs",
+    "init": "node node_modules/.bin/noflo-nodejs --secret some-password --port $PORT",
+    "start": "node node_modules/.bin/noflo-nodejs --port $PORT",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Connor Turland <connorturland@gmail.com>",
