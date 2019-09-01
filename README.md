@@ -1,4 +1,10 @@
-a noflo server, with rsf components pre-installed on it. Ready for use with Heroku
+a noflo server, with noflo-rsf components pre-installed on it. Ready for use with Heroku.
+
+All noflo component libraries currently installed: 
+- noflo-core
+- noflo-filesystem
+- noflo-rsf
+- noflo-strings
 
 # Usage
 
