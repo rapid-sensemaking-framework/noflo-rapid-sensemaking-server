@@ -3,11 +3,14 @@ rapid sensemaking noflo development server
 
 # Usage
 
-First time
+First time:
+
 `npm install`
+
 `npm run init`
 
 Following times:
+
 `npm start`
 
 ![picture of an rsf graph workflow in noflo](./images/big-rsf-graph.png)
