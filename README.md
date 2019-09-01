@@ -1,5 +1,4 @@
-# noflo-rapid-sensemaking-server
-rapid sensemaking noflo development server
+a noflo server, with rsf components pre-installed on it. Ready for use with Heroku
 
 # Usage
 
