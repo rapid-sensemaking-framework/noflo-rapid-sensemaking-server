@@ -13,7 +13,7 @@
     "noflo-core": "^0.6.1",
     "noflo-filesystem": "^2.0.1",
     "noflo-nodejs": "^0.11.1",
-    "noflo-rsf": "0.0.18",
+    "noflo-rsf": "0.0.20",
     "noflo-strings": "^0.4.0"
   }
 }
