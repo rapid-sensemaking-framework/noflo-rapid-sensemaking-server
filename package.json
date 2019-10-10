@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "rapid sensemaking noflo development server",
   "scripts": {
-    "start": "NTBA_FIX_319=1 node node_modules/.bin/noflo-nodejs --open false --debug --verbose",
+    "start": "NTBA_FIX_319=1 node node_modules/.bin/noflo-nodejs --open false --debug --verbose --port $PORT --secret $TOP_SECRET",
+    "startlocal": "NTBA_FIX_319=1 node node_modules/.bin/noflo-nodejs --open false --debug --verbose",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Connor Turland <connorturland@gmail.com>",
