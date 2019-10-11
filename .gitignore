@@ -1,6 +1,8 @@
 flowhub.json
 botconfig.json
 participantconfig.json
+localhost.cert
+localhost.key
 
 # Logs
 logs
