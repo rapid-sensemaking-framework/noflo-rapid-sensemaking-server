@@ -1,9 +1,9 @@
-a noflo server, with noflo-rsf components pre-installed on it. Ready for use with Heroku.
+a noflo server, with [noflo-rsf](https://github.com/rapid-sensemaking-framework/noflo-rsf) components pre-installed on it. Ready for use with Heroku.
 
 All noflo component libraries currently installed: 
 - noflo-core
 - noflo-filesystem
-- noflo-rsf
+- [noflo-rsf](https://github.com/rapid-sensemaking-framework/noflo-rsf)
 - noflo-strings
 
 # Usage
@@ -12,11 +12,17 @@ First time:
 
 `npm install`
 
-`npm run init`
-
-Following times:
+Production:
 
 `npm start`
+
+Local (secured):
+
+`npm run startlocal`
+
+Local (insecure):
+
+`npm run startinsecure`
 
 
 Expects environment variables to be set:

@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "description": "rapid sensemaking noflo development server",
   "scripts": {
-    "start": "NTBA_FIX_319=1 node node_modules/.bin/noflo-nodejs --open false --debug --verbose --port $PORT --secret $TOP_SECRET",
-    "startlocal": "NTBA_FIX_319=1 node node_modules/.bin/noflo-nodejs --host 127.0.0.1 --open false --debug --verbose --tls-key=localhost.key --tls-cert=localhost.cert",
-    "startinsecure": "NTBA_FIX_319=1 node node_modules/.bin/noflo-nodejs --host 127.0.0.1 --open false --debug --verbose --tls-key= --tls-cert=",
+    "start": "node node_modules/.bin/noflo-nodejs --open false --debug --verbose --port $PORT --secret $TOP_SECRET",
+    "startlocal": "node node_modules/.bin/noflo-nodejs --host 127.0.0.1 --open false --debug --verbose --tls-key=localhost.key --tls-cert=localhost.cert",
+    "startinsecure": "node node_modules/.bin/noflo-nodejs --host 127.0.0.1 --open false --debug --verbose --tls-key= --tls-cert=",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Connor Turland <connorturland@gmail.com>",
@@ -16,7 +16,7 @@
     "noflo-filesystem": "^2.0.1",
     "noflo-flow": "^0.7.0",
     "noflo-nodejs": "^0.11.1",
-    "noflo-rsf": "0.0.34",
+    "noflo-rsf": "0.0.35",
     "noflo-strings": "^0.4.0"
   }
 }
