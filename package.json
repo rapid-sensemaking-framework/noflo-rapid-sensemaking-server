@@ -2,6 +2,10 @@
   "name": "noflo-rapid-sensemaking-server",
   "version": "0.0.1",
   "description": "rapid sensemaking noflo development server",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rapid-sensemaking-framework/noflo-rapid-sensemaking-server.git"
+  },
   "scripts": {
     "start": "node node_modules/.bin/noflo-nodejs --open false --debug --verbose --port $PORT --secret $TOP_SECRET",
     "startlocal": "node node_modules/.bin/noflo-nodejs --host 127.0.0.1 --open false --debug --verbose --tls-key=localhost.key --tls-cert=localhost.cert",
@@ -16,7 +20,7 @@
     "noflo-filesystem": "^2.0.1",
     "noflo-flow": "^0.7.0",
     "noflo-nodejs": "^0.11.1",
-    "noflo-rsf": "0.0.39",
+    "noflo-rsf": "0.0.40",
     "noflo-strings": "^0.4.0"
   }
 }
