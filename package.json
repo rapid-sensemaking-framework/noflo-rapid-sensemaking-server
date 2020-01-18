@@ -8,9 +8,10 @@
   },
   "scripts": {
     "start": "node node_modules/.bin/noflo-nodejs --open false --debug --verbose --port $PORT --secret $TOP_SECRET",
-    "startlocal": "node node_modules/.bin/noflo-nodejs --host 127.0.0.1 --open false --debug --verbose --tls-key=localhost.key --tls-cert=localhost.cert",
+    "startlocal": "node node_modules/.bin/noflo-nodejs --host $HOST --open false --debug --verbose --tls-key=localhost.key --tls-cert=localhost.cert --port $PORT --secret $TOP_SECRET",
     "startinsecure": "node node_modules/.bin/noflo-nodejs --host 127.0.0.1 --open false --debug --verbose --tls-key= --tls-cert=",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "startscript": "./start"
   },
   "author": "Connor Turland <connorturland@gmail.com>",
   "license": "AGPL-3.0",
