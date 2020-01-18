@@ -32,7 +32,7 @@ Expects environment variables to be set:
 ```
 # BOT_CONFIG should include configurations which make the config expected by rsf-telegramable,
 # rsf-mattermostable, and rsf-smsable, keyed by `mattermostable`, `telegramable`, and `smsable`
-BOT_CONFIG={"mattermostable":"https://chat.xx@@email@email.com@@userpass@@@https://chat.yy@@user@email.com@@userpass","telegramable":{"socketUrl":"ws://localhost:3002"},"smsable":{"socketUrl":"ws://localhost:3003"}}
+BOT_CONFIG='{"mattermostable":"https://chat.xx@@email@email.com@@userpass@@@https://chat.yy@@user@email.com@@userpass","telegramable":{"socketUrl":"ws://localhost:3002"},"smsable":{"socketUrl":"ws://localhost:3003"}}'
 
 # the host ip address
 HOST=127.0.0.1
