@@ -1,0 +1,9 @@
+#!/bin/bash
+# configuration for the contactables servers
+export BOT_CONFIG={"mattermostable":"https://chat.xx@@email@email.com@@userpass@@@https://chat.yy@@user@email.com@@userpass","telegramable":{"socketUrl":"ws://localhost:3002"},"smsable":{"socketUrl":"ws://localhost:3003"}}
+
+export HOST=123.44.55.66
+export PORT=3001
+export TOP_SECRET=12bd9asdfk3
+# start the server
+npm run startlocal
