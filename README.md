@@ -25,8 +25,20 @@ Local (insecure):
 `npm run startinsecure`
 
 
+## Environment Variables
+
 Expects environment variables to be set:
 
-`PORT`: the port on which to run the websocket server.
+```
+# TODO
+BOT_CONFIG={"mattermostable":"https://chat.xx@@email@email.com@@userpass@@@https://chat.yy@@user@email.com@@userpass","telegramable":{"socketUrl":"ws://localhost:3002"},"smsable":{"socketUrl":"ws://localhost:3003"}}
 
-`TOP_SECRET`: an arbitrary secret which will provide a layer of authentication between a noflo client, such as flowhub or noflo-rsf-client, and the server.
+# the host ip address
+HOST=127.0.0.1
+
+# the port on which to run the websocket server.
+PORT=3001
+
+# an arbitrary secret which will provide a layer of authentication between
+# a noflo client, such as flowhub or noflo-rsf-client, and the server
+TOP_SECRET=123jkad9s
