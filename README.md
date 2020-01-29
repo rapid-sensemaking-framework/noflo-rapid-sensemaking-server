@@ -6,23 +6,27 @@ All noflo component libraries currently installed:
 - [noflo-rsf](https://github.com/rapid-sensemaking-framework/noflo-rsf)
 - noflo-strings
 
+Good for connections from clients such as [flowhub](https://app.flowhub.io/) and [rsf-electron](https://github.com/rapid-sensemaking-framework/rsf-electron).
+
 # Usage
 
 First time:
 
 `npm install`
 
-Production:
-
-`npm start`
-
-Local (secured):
-
-`npm run startlocal`
-
 Local (insecure):
 
 `npm run startinsecure`
+
+Production (secure)
+
+[set up TLS](https://github.com/noflo/noflo-nodejs#securing-the-runtime-connection) using the `openssl` steps documented here... note that this just generates a self-signed certificate, and this can come with its own challenges. Connecting to it both in the browser, or from nodejs requires overriding default security settings.
+> see the NODE_TLS_REJECT_UNAUTHORIZED comments [here](https://github.com/rapid-sensemaking-framework/rsf-electron#noflo-runtime)
+> if trying to use flowhub... navigate directly to the site of the 'insecure' websocket and then authorize it. if you don't do this, it will reject the connections
+
+Modify the environment variables in `./start` script file, according to the section below.
+
+Then, you can run `npm startscript`, or simply `./start`.
 
 
 ## Environment Variables
