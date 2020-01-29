@@ -21,13 +21,13 @@ Local (insecure):
 Production (secure)
 
 [set up TLS](https://github.com/noflo/noflo-nodejs#securing-the-runtime-connection) using the `openssl` steps documented here... note that this just generates a self-signed certificate, and this can come with its own challenges. Connecting to it both in the browser, or from nodejs requires overriding default security settings.
-> see the NODE_TLS_REJECT_UNAUTHORIZED comments [here](https://github.com/rapid-sensemaking-framework/rsf-electron#noflo-runtime)
+> if trying to use nodejs, see the NODE_TLS_REJECT_UNAUTHORIZED comments [here](https://github.com/rapid-sensemaking-framework/rsf-electron#noflo-runtime)
+
 > if trying to use flowhub... navigate directly to the site of the 'insecure' websocket and then authorize it. if you don't do this, it will reject the connections
 
 Modify the environment variables in `./start` script file, according to the section below.
 
 Then, you can run `npm startscript`, or simply `./start`.
-
 
 ## Environment Variables
 
