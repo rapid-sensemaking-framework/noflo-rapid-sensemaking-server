@@ -1,4 +1,4 @@
-a noflo server, with [noflo-rsf](https://github.com/rapid-sensemaking-framework/noflo-rsf) components pre-installed on it.
+a [noflo](https://noflojs.org/) runtime, with [noflo-rsf](https://github.com/rapid-sensemaking-framework/noflo-rsf) components pre-installed on it.
 
 All noflo component libraries currently installed: 
 - noflo-core
