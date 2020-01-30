@@ -7,9 +7,9 @@
     "url": "https://github.com/rapid-sensemaking-framework/noflo-rapid-sensemaking-server.git"
   },
   "scripts": {
-    "start": "node node_modules/.bin/noflo-nodejs --open false --debug --verbose --port $PORT --secret $TOP_SECRET",
-    "startlocal": "node node_modules/.bin/noflo-nodejs --host $HOST --open false --debug --verbose --tls-key=localhost.key --tls-cert=localhost.cert --port $PORT --secret $TOP_SECRET",
-    "startinsecure": "node node_modules/.bin/noflo-nodejs --host 127.0.0.1 --open false --debug --verbose --tls-key= --tls-cert=",
+    "start": "npx noflo-nodejs --open false --debug --verbose --port $PORT --secret $TOP_SECRET",
+    "startlocal": "npx noflo-nodejs --host $HOST --open false --debug --verbose --tls-key=localhost.key --tls-cert=localhost.cert --port $PORT --secret $TOP_SECRET",
+    "startinsecure": "npx noflo-nodejs --host 127.0.0.1 --open false --debug --verbose --tls-key= --tls-cert=",
     "test": "echo \"Error: no test specified\" && exit 1",
     "startscript": "./start"
   },
@@ -21,7 +21,7 @@
     "noflo-filesystem": "^2.0.1",
     "noflo-flow": "^0.7.0",
     "noflo-nodejs": "^0.11.1",
-    "noflo-rsf": "0.0.50",
+    "noflo-rsf": "0.0.53",
     "noflo-strings": "^0.4.0"
   }
 }
