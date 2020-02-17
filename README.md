@@ -125,8 +125,17 @@ rough cut:
 - connect the output of one to the input of another
 - fill in raw values using the built-in form editors
 
-Specifically, how to handle *bot_configs* type inputs, by connecting them to the secure environment variables
+#### bot_configs type inputs
+Because much of RSF relates to communicating between bots and real chat users, we need to give our RSF components access to speak as the bots. For this, we use environment variables set on the server, and reference them in our graphs.
 
+Recall the `BOT_CONFIG` environment variable that was set for the n-r-s-s server, from that section of the README. We will now be referencing that environment variables in our graph. The value we set was a stringified JSON value. That means to use it in our program we will need to access it, then parse the JSON. We use built-in noflo components for this.
+
+1. Use the search function to find and add `core/ReadEnv` and `strings/ParseJson` components to your canvas.
+2. Wire up the `out` port of `ReadEnv` to the `in` port of `ParseJson`.
+3. Wire up the `out` port of `ParseJson` to the `bot_configs` port of any RSF component you want to use, which requires it.
+4. Click on `ReadEnv` and use the form editor in the upper left to manually set the `key` port to `BOT_CONFIG`.
+![bot configs environment variable feeding into bot configs port](./images/bot-config-parsing.png)
+![use the form to set the key port to BOT_CONFIG](./images/bot-config-env-key.png)
 
 ### 5. Running a Program
 
@@ -135,4 +144,10 @@ Press the "play" (![play button icon](./images/run.png)) button to run your prog
 You can find out about which values actually ran through your live program execution by clicking on the "connection" of interest to you, and looking in the top left corner of the screen at the history of that "connection".
 
 
+## Other Cool Flowhub Things
 
+- Right-click on a component output to "export" it, meaning make this usable as a "sub-graph" within another graph
+- Color code your Connections, by clicking on them, and changing their colors in the upper-right panel
+- Duplicate existing components, by right-clicking on them, and selecting "copy", then right-clicking on open canvas, and clicking "paste"
+- console.log anything by using `core/Output` component
+- read environment variables by using `core/ReadEnv`
