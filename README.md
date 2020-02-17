@@ -109,7 +109,7 @@ Click the upper central "Edit as Project" button to turn this into a persistent,
 You now have a blank canvas of a project before you. A quick orientation:
 - ![menu and home icon](./images/menu-and-home.png) Access the project menu, and access to "Home"
 - ![graph settings icon](./images/graph-settings.png) Access the settings for this "Graph"
-  - - ![download graph icon](./images/download-graph.png) Download/backup this graph to your file system (as JSON)
+  - ![download graph icon](./images/download-graph.png) Download/backup this graph to your file system (as JSON)
 - ![find and add components icon](./images/find-and-add-components.png) Search for and browse components from the installed set, and click them to add to your Graph
 - ![run graph icon](./images/run.png) Run this Graph as a program in the connected runtime
 
