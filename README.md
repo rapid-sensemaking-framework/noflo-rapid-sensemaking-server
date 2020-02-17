@@ -118,10 +118,21 @@ Click the search icon (![find and add components icon](./images/find-and-add-com
 
 ![rsf component search screenshot](./images/rsf-component-search.png)
 
+**TODO**
+rough cut:
+- click on a component
+- click on another component
+- connect the output of one to the input of another
+- fill in raw values using the built-in form editors
+
+Specifically, how to handle *bot_configs* type inputs, by connecting them to the secure environment variables
+
 
 ### 5. Running a Program
 
-TODO
+Press the "play" (![play button icon](./images/run.png)) button to run your program.
+
+You can find out about which values actually ran through your live program execution by clicking on the "connection" of interest to you, and looking in the top left corner of the screen at the history of that "connection".
 
 
 
