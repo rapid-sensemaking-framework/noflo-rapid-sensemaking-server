@@ -151,3 +151,5 @@ You can find out about which values actually ran through your live program execu
 - Duplicate existing components, by right-clicking on them, and selecting "copy", then right-clicking on open canvas, and clicking "paste"
 - console.log anything by using `core/Output` component
 - read environment variables by using `core/ReadEnv`
+
+![noflo image](https://raw.githubusercontent.com/rapid-sensemaking-framework/noflo-rsf/master/screenshots/colored-rsf-graph.png)
